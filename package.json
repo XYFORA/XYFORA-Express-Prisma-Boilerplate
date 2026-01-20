@@ -1,0 +1,26 @@
+{
+  "name": "xyofra-express-prisma-app",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "AHMED SALEEM SHAIKH | Co-Founder & CTO Of XYFORA",
+  "type": "module",
+  "license": "ISC",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "postinstall": "prisma generate",
+    "generate": "prisma generate",
+    "migrate": "prisma migrate dev --schema=./prisma/schema.prisma"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.2.0",
+    "@prisma/client": "^7.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11",
+    "pg": "^8.11.0"
+  },
+  "devDependencies": {
+    "prisma": "^7.2.0"
+  }
+}
